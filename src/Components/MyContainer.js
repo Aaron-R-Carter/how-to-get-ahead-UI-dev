@@ -1,20 +1,30 @@
 import React from 'react';
-import CssBaseline from '@material-ui/core/CssBaseline';
-import Typography from '@material-ui/core/Typography';
-import Container from '@material-ui/core/Container';
 import Stepper from "./Stepper";
-
-
+import { Column, Row } from 'simple-flexbox';
 
 
 export default function MyContainer() {
-    return (
-        <React.Fragment>
-            <CssBaseline />
-            <Container maxWidth="lg" >
 
-                <Stepper />
-            </Container>
-        </React.Fragment>
+
+
+    return (
+
+        <Column flexGrow={1}>
+            <Row vertical='center'>
+                <Column flexGrow={0} horizontal='center' flexBasis="5%">
+                    
+                </Column>
+                <Column flexGrow={1} horizontal='center'flexBasis="90%">
+                   <Stepper />
+                </Column>
+                <Column flexGrow={0} horizontal='center' flexBasis="5%">
+                    
+                </Column>
+            </Row>
+        </Column>
+
     );
+
 }
+
+

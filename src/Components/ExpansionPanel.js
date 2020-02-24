@@ -10,6 +10,7 @@ import My12Form from "./My12Form";
 const useStyles = makeStyles(theme => ({
     root: {
         width: '100%',
+        marginTop: 30,
     },
     heading: {
         fontSize: theme.typography.pxToRem(15),
@@ -38,7 +39,7 @@ export default function ControlledExpansionPanels() {
                     id="panel1bh-header"
                 >
                     <Typography className={classes.heading}>I feel miserable when I… </Typography>
-                    {/* <Typography className={classes.secondaryHeading}>I am an expansion panel</Typography> */}
+
                 </ExpansionPanelSummary>
                 <ExpansionPanelDetails>
                     <My12Form />
@@ -50,12 +51,10 @@ export default function ControlledExpansionPanels() {
                     id="panel2bh-header"
                 >
                     <Typography className={classes.heading}>I dread… </Typography>
-                    {/* <Typography className={classes.secondaryHeading}>
-                        You are currently not an owner
-          </Typography> */}
+
                 </ExpansionPanelSummary>
                 <ExpansionPanelDetails>
-                <My12Form />
+                    <My12Form />
                 </ExpansionPanelDetails>
             </ExpansionPanel>
             <ExpansionPanel expanded={expanded === 'panel3'} onChange={handleChange('panel3')}>
@@ -64,12 +63,10 @@ export default function ControlledExpansionPanels() {
                     id="panel3bh-header"
                 >
                     <Typography className={classes.heading}>I’m good at but don’t particularly enjoy…</Typography>
-                    {/* <Typography className={classes.secondaryHeading}>
-                        Filtering has been entirely disabled for whole web server
-          </Typography> */}
+
                 </ExpansionPanelSummary>
                 <ExpansionPanelDetails>
-                <My12Form />
+                    <My12Form />
                 </ExpansionPanelDetails>
             </ExpansionPanel>
             <ExpansionPanel expanded={expanded === 'panel4'} onChange={handleChange('panel4')}>
@@ -80,7 +77,7 @@ export default function ControlledExpansionPanels() {
                     <Typography className={classes.heading}>I can’t imagine doing … for the rest of my life.</Typography>
                 </ExpansionPanelSummary>
                 <ExpansionPanelDetails>
-                <My12Form />
+                    <My12Form />
                 </ExpansionPanelDetails>
             </ExpansionPanel>
             <ExpansionPanel expanded={expanded === 'panel4'} onChange={handleChange('panel4')}>
@@ -91,7 +88,7 @@ export default function ControlledExpansionPanels() {
                     <Typography className={classes.heading}>I don’t understand why anybody would… </Typography>
                 </ExpansionPanelSummary>
                 <ExpansionPanelDetails>
-                <My12Form />
+                    <My12Form />
                 </ExpansionPanelDetails>
             </ExpansionPanel>
             <ExpansionPanel expanded={expanded === 'panel4'} onChange={handleChange('panel4')}>
@@ -102,7 +99,7 @@ export default function ControlledExpansionPanels() {
                     <Typography className={classes.heading}>One thing that doesn’t appeal to me at all is...</Typography>
                 </ExpansionPanelSummary>
                 <ExpansionPanelDetails>
-                <My12Form />
+                    <My12Form />
                 </ExpansionPanelDetails>
             </ExpansionPanel>
 
