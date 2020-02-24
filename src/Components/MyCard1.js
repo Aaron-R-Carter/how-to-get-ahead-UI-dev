@@ -5,6 +5,8 @@ import CardActions from '@material-ui/core/CardActions';
 import CardContent from '@material-ui/core/CardContent';
 import Button from '@material-ui/core/Button';
 import Typography from '@material-ui/core/Typography';
+import ExpansionPanel from './ExpansionPanel';
+
 
 const useStyles = makeStyles({
   root: {
@@ -16,7 +18,7 @@ const useStyles = makeStyles({
     transform: 'scale(0.8)',
   },
   title: {
-    fontSize: 14,
+    fontSize: 25,
   },
   pos: {
     marginBottom: 12,
@@ -30,24 +32,25 @@ export default function MyCard() {
   return (
     <Card className={classes.root}>
       <CardContent>
-        <Typography className={classes.title} color="textSecondary" gutterBottom>
-          Word of the Day
+        <Typography className={classes.title} color="textPrimary" gutterBottom >
+          Part 1: Via Negativa
         </Typography>
-        <Typography variant="h5" component="h2">
+        {/* <Typography variant="h5" component="h2">
           be{bull}nev{bull}o{bull}lent
-        </Typography>
+        </Typography> */}
         <Typography className={classes.pos} color="textSecondary">
-          adjective
+        Write each sentence stem and then immediately finish the sentence. <br></br> Do this for each stem 12 times. <br></br>Do not worry about spelling, grammar, or repeating yourself. <br></br>Do not self-censor. These are for you and nobody else. Follow your gut.
         </Typography>
-        <Typography variant="body2" component="p">
+
+        
+        <ExpansionPanel></ExpansionPanel>
+        {/* <Typography variant="body2" component="p">
           well meaning and kindly.
           <br />
           {'"a benevolent smile"'}
-        </Typography>
+        </Typography> */}
       </CardContent>
-      <CardActions>
-        <Button size="small">Learn More</Button>
-      </CardActions>
+      
     </Card>
   );
 }

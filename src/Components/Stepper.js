@@ -5,7 +5,7 @@ import Step from '@material-ui/core/Step';
 import StepLabel from '@material-ui/core/StepLabel';
 import Button from '@material-ui/core/Button';
 import Typography from '@material-ui/core/Typography';
-import MyCard from "./MyCard";
+import MyCard1 from "./MyCard1";
 
 const useStyles = makeStyles(theme => ({
     root: {
@@ -21,21 +21,21 @@ const useStyles = makeStyles(theme => ({
 }));
 
 function getSteps() {
-    return ['Part 1' , 'Part 2', 'Part 3', 'Part 4', 'Part 5', 'Part 6'];
+    return ['Part 1', 'Part 2', 'Part 3', 'Part 4', 'Part 5', 'Part 6'];
 }
 
 function getStepContent(step) {
     switch (step) {
         case 0:
-            return <MyCard></MyCard>;
+            return <MyCard1></MyCard1>;
         case 1:
-            return 'What is an ad group anyways?';
+            return <MyCard1></MyCard1>;
         case 2:
-            return 'This is the bit I really care about!';
+            return <MyCard1></MyCard1>;
         case 3:
-            return 'This is a test'
+            return <MyCard1></MyCard1>;
         default:
-            return 'Unknown step';
+            return <MyCard1></MyCard1>;
     }
 }
 
@@ -97,7 +97,7 @@ export default function HorizontalLinearStepper() {
                         const stepProps = {};
                         const labelProps = {};
                         if (isStepOptional(index)) {
-                            labelProps.optional = <Typography variant="caption">Optional</Typography>;
+                            // labelProps.optional = <Typography variant="caption">Optional</Typography>;
                         }
                         if (isStepSkipped(index)) {
                             stepProps.completed = false;
@@ -114,10 +114,10 @@ export default function HorizontalLinearStepper() {
                         <div>
                             <Typography className={classes.instructions}>
                                 All steps completed - you&apos;re finished
-            </Typography>
+                            </Typography>
                             <Button onClick={handleReset} className={classes.button}>
                                 Reset
-            </Button>
+                            </Button>
                         </div>
                     ) : (
                             <div>
@@ -125,7 +125,7 @@ export default function HorizontalLinearStepper() {
                                 <div>
                                     <Button disabled={activeStep === 0} onClick={handleBack} className={classes.button}>
                                         Back
-              </Button>
+                                    </Button>
                                     {isStepOptional(activeStep) && (
                                         <Button
                                             variant="contained"
@@ -134,7 +134,7 @@ export default function HorizontalLinearStepper() {
                                             className={classes.button}
                                         >
                                             Skip
-                </Button>
+                                        </Button>
                                     )}
 
                                     <Button

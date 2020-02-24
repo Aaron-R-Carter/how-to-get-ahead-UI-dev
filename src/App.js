@@ -1,17 +1,14 @@
 import React from 'react';
 import './App.css';
-import Stepper from "./Components/Stepper";
-import Navbar from "./Components/Navbar";
 import MyContainer from "./Components/MyContainer";
+import Navbar from "./Components/Navbar";
 
 
 function App() {
   return (
     <div>
-     
-        <Navbar />
-
-        <Stepper />
+      <Navbar />
+        <MyContainer></MyContainer>
 
     </div>
   );
