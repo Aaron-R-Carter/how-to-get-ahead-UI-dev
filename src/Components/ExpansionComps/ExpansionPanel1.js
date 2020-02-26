@@ -7,23 +7,8 @@ import Typography from '@material-ui/core/Typography';
 import ExpandMoreIcon from '@material-ui/icons/ExpandMore';
 import My12Form from "./My12Form";
 
-const useStyles = makeStyles(theme => ({
-    root: {
-        width: '100%',
-        marginTop: 30,
-    },
-    heading: {
-        fontSize: theme.typography.pxToRem(15),
-        flexBasis: '33.33%',
-        flexShrink: 0,
-    },
-    secondaryHeading: {
-        fontSize: theme.typography.pxToRem(15),
-        color: theme.palette.text.secondary,
-    },
-}));
 
-export default function ControlledExpansionPanels() {
+export default function ExpansionPanel1() {
     const classes = useStyles();
     const [expanded, setExpanded] = React.useState(false);
 
@@ -106,3 +91,19 @@ export default function ControlledExpansionPanels() {
         </div>
     );
 }
+
+const useStyles = makeStyles(theme => ({
+    root: {
+        width: '100%',
+        marginTop: 30,
+    },
+    heading: {
+        fontSize: theme.typography.pxToRem(15),
+        flexBasis: '33.33%',
+        flexShrink: 0,
+    },
+    secondaryHeading: {
+        fontSize: theme.typography.pxToRem(15),
+        color: theme.palette.text.secondary,
+    },
+}));

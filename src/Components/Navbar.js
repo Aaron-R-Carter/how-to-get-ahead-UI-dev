@@ -7,19 +7,6 @@ import Button from '@material-ui/core/Button';
 import IconButton from '@material-ui/core/IconButton';
 import MenuIcon from '@material-ui/icons/Menu';
 
-const useStyles = makeStyles(theme => ({
-  root: {
-    flexGrow: 1,
-    marginBottom: 25,
-  },
-  menuButton: {
-    marginRight: theme.spacing(2),
-  },
-  title: {
-    flexGrow: 1,
-  },
-}));
-
 export default function ButtonAppBar() {
   const classes = useStyles();
 
@@ -39,4 +26,17 @@ export default function ButtonAppBar() {
     </div>
   );
 }
+
+const useStyles = makeStyles(theme => ({
+  root: {
+    flexGrow: 1,
+    marginBottom: 25,
+  },
+  menuButton: {
+    marginRight: theme.spacing(2),
+  },
+  title: {
+    flexGrow: 1,
+  },
+}));
 

@@ -5,20 +5,8 @@ import Step from '@material-ui/core/Step';
 import StepLabel from '@material-ui/core/StepLabel';
 import Button from '@material-ui/core/Button';
 import Typography from '@material-ui/core/Typography';
-import MyCard1 from "./MyCard1";
-
-const useStyles = makeStyles(theme => ({
-    root: {
-        width: '100%',
-    },
-    button: {
-        marginRight: theme.spacing(1),
-    },
-    instructions: {
-        marginTop: theme.spacing(1),
-        marginBottom: theme.spacing(1),
-    },
-}));
+import MyCard1 from "./Cards/MyCard1";
+import MyCard2 from "./Cards/MyCard2"
 
 function getSteps() {
     return ['Part 1', 'Part 2', 'Part 3', 'Part 4', 'Part 5', 'Part 6'];
@@ -29,7 +17,7 @@ function getStepContent(step) {
         case 0:
             return <MyCard1></MyCard1>;
         case 1:
-            return <MyCard1></MyCard1>;
+            return <MyCard2></MyCard2>;
         case 2:
             return <MyCard1></MyCard1>;
         case 3:
@@ -155,3 +143,17 @@ export default function HorizontalLinearStepper() {
 
     );
 }
+
+const useStyles = makeStyles(theme => ({
+    root: {
+        width: '100%',
+    },
+    button: {
+        marginRight: theme.spacing(1),
+    },
+    instructions: {
+        marginTop: theme.spacing(1),
+        marginBottom: theme.spacing(1),
+    },
+}));
+

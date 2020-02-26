@@ -3,20 +3,27 @@ import { makeStyles } from '@material-ui/core/styles';
 import TextField from '@material-ui/core/TextField';
 import Button from '@material-ui/core/Button';
 
-const useStyles = makeStyles(theme => ({
 
-}));
+class My12Form extends React.Component {
 
-export default function My12Form() {
-  const classes = useStyles();
+  state ={
+    id: "",
+
+  }
+
+  onChange = (e) => {
+    this.setState({[e.target.id]: e.target.value})
+  }
+
+  render(){
 
   return (
     <div>
-      <form>
+      <form> 
 
 
         <TextField
-          id="outlined-full-width"
+          id="1"
           label="1"
           style={{ margin: 8 }}
           // placeholder="I feel miserable when I..."
@@ -27,9 +34,11 @@ export default function My12Form() {
             shrink: true,
           }}
           variant="outlined"
+          value = {this.state.text}
+          onChange = {this.onChange}
         />
         <TextField
-          id="outlined-full-width"
+          id="2"
           label="2"
           style={{ margin: 8 }}
           // placeholder="I feel miserable when I..."
@@ -40,9 +49,10 @@ export default function My12Form() {
             shrink: true,
           }}
           variant="outlined"
+          value = {this.state.text}
         />
         <TextField
-          id="outlined-full-width"
+          id="3"
           label="3"
           style={{ margin: 8 }}
           // placeholder="I feel miserable when I..."
@@ -53,9 +63,10 @@ export default function My12Form() {
             shrink: true,
           }}
           variant="outlined"
+          value = {this.state.text}
         />
         <TextField
-          id="outlined-full-width"
+          id="4"
           label="4"
           style={{ margin: 8 }}
           // placeholder="I feel miserable when I..."
@@ -66,9 +77,10 @@ export default function My12Form() {
             shrink: true,
           }}
           variant="outlined"
+          value = {this.state.text}
         />
         <TextField
-          id="outlined-full-width"
+          id="5"
           label="5"
           style={{ margin: 8 }}
           // placeholder="I feel miserable when I..."
@@ -79,9 +91,10 @@ export default function My12Form() {
             shrink: true,
           }}
           variant="outlined"
+          value = {this.state.text}
         />
         <TextField
-          id="outlined-full-width"
+          id="6"
           label="6"
           style={{ margin: 8 }}
           // placeholder="I feel miserable when I..."
@@ -92,9 +105,10 @@ export default function My12Form() {
             shrink: true,
           }}
           variant="outlined"
+          value = {this.state.text}
         />
         <TextField
-          id="outlined-full-width"
+          id="7"
           label="7"
           style={{ margin: 8 }}
           // placeholder="I feel miserable when I..."
@@ -105,9 +119,10 @@ export default function My12Form() {
             shrink: true,
           }}
           variant="outlined"
+          value = {this.state.text}
         />
         <TextField
-          id="outlined-full-width"
+          id="8"
           label="8"
           style={{ margin: 8 }}
           // placeholder="I feel miserable when I..."
@@ -118,9 +133,10 @@ export default function My12Form() {
             shrink: true,
           }}
           variant="outlined"
+          value = {this.state.text}
         />
         <TextField
-          id="outlined-full-width"
+          id="9"
           label="9"
           style={{ margin: 8 }}
           // placeholder="I feel miserable when I..."
@@ -131,9 +147,10 @@ export default function My12Form() {
             shrink: true,
           }}
           variant="outlined"
+          value = {this.state.text}
         />
         <TextField
-          id="outlined-full-width"
+          id="10"
           label="10"
           style={{ margin: 8 }}
           // placeholder="I feel miserable when I..."
@@ -144,9 +161,10 @@ export default function My12Form() {
             shrink: true,
           }}
           variant="outlined"
+          value = {this.state.text}
         />
         <TextField
-          id="outlined-full-width"
+          id="11"
           label="11"
           style={{ margin: 8 }}
           // placeholder="I feel miserable when I..."
@@ -157,9 +175,10 @@ export default function My12Form() {
             shrink: true,
           }}
           variant="outlined"
+          value = {this.state.text}
         />
         <TextField
-          id="outlined-full-width"
+          id="12"
           label="12"
           style={{ margin: 8 }}
           // placeholder="I feel miserable when I..."
@@ -170,6 +189,7 @@ export default function My12Form() {
             shrink: true,
           }}
           variant="outlined"
+          value = {this.state.text}
         />
 
 
@@ -178,12 +198,10 @@ export default function My12Form() {
       <Button
         variant="contained"
         color="primary"
-        
-       
-        
       >
         Submit
                 </Button>
     </div>
   );
-}
+};}
+export default My12Form;
