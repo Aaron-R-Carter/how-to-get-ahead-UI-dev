@@ -5,7 +5,7 @@ import ExpansionPanelDetails from '@material-ui/core/ExpansionPanelDetails';
 import ExpansionPanelSummary from '@material-ui/core/ExpansionPanelSummary';
 import Typography from '@material-ui/core/Typography';
 import ExpandMoreIcon from '@material-ui/icons/ExpandMore';
-import My12Form2 from "./My12Form2";
+import My12Form from "./My12Form";
 
 
 export default function ControlledExpansionPanels() {
@@ -27,7 +27,7 @@ export default function ControlledExpansionPanels() {
 
                 </ExpansionPanelSummary>
                 <ExpansionPanelDetails>
-                    <My12Form2 />
+                    <My12Form />
                 </ExpansionPanelDetails>
             </ExpansionPanel>
             <ExpansionPanel expanded={expanded === 'panel2'} onChange={handleChange('panel2')}>
@@ -39,7 +39,7 @@ export default function ControlledExpansionPanels() {
 
                 </ExpansionPanelSummary>
                 <ExpansionPanelDetails>
-                    <My12Form2 />
+                    <My12Form />
                 </ExpansionPanelDetails>
             </ExpansionPanel>
             <ExpansionPanel expanded={expanded === 'panel3'} onChange={handleChange('panel3')}>
@@ -51,7 +51,7 @@ export default function ControlledExpansionPanels() {
 
                 </ExpansionPanelSummary>
                 <ExpansionPanelDetails>
-                    <My12Form2 />
+                    <My12Form />
                 </ExpansionPanelDetails>
             </ExpansionPanel>
             <ExpansionPanel expanded={expanded === 'panel4'} onChange={handleChange('panel4')}>
@@ -62,7 +62,7 @@ export default function ControlledExpansionPanels() {
                     <Typography className={classes.heading}>One of the things I’ve been interested in for a long time is…</Typography>
                 </ExpansionPanelSummary>
                 <ExpansionPanelDetails>
-                    <My12Form2 />
+                    <My12Form />
                 </ExpansionPanelDetails>
             </ExpansionPanel>
             <ExpansionPanel expanded={expanded === 'panel4'} onChange={handleChange('panel4')}>
@@ -73,7 +73,7 @@ export default function ControlledExpansionPanels() {
                     <Typography className={classes.heading}>I don’t want to miss out on…</Typography>
                 </ExpansionPanelSummary>
                 <ExpansionPanelDetails>
-                    <My12Form2 />
+                    <My12Form />
                 </ExpansionPanelDetails>
             </ExpansionPanel>
             <ExpansionPanel expanded={expanded === 'panel4'} onChange={handleChange('panel4')}>
@@ -84,7 +84,7 @@ export default function ControlledExpansionPanels() {
                     <Typography className={classes.heading}>Even if it is challenging, I enjoy...</Typography>
                 </ExpansionPanelSummary>
                 <ExpansionPanelDetails>
-                    <My12Form2 />
+                    <My12Form />
                 </ExpansionPanelDetails>
             </ExpansionPanel>
 

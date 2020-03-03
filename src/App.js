@@ -7,20 +7,6 @@ import Stepper from "./Components/Stepper"
 
 class App extends Component {
 
-  state = {
-    AMSteps: [
-      {
-        id: 1,
-        title: "Part 1: Via Negativa",
-        instructions: ""
-      },
-      {
-        id: 2,
-        title: "Part 2: Via Positiva",
-        instructions: ""
-      }
-    ]
-  };
 
   render() {
 

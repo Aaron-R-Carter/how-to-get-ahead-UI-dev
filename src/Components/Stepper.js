@@ -9,7 +9,7 @@ import MyCard1 from "./Cards/MyCard1";
 import MyCard2 from "./Cards/MyCard2"
 
 function getSteps() {
-    return ['Part 1', 'Part 2', 'Part 3', 'Part 4', 'Part 5', 'Part 6'];
+    return ['Welcome', 'Part 1', 'Part 2', 'Part 3', 'Part 4', 'Part 5', 'Part 6', 'Finish'];
 }
 
 function getStepContent(step) {
@@ -56,20 +56,20 @@ export default function HorizontalLinearStepper() {
         setActiveStep(prevActiveStep => prevActiveStep - 1);
     };
 
-    const handleSkip = () => {
-        if (!isStepOptional(activeStep)) {
-            // You probably want to guard against something like this,
-            // it should never occur unless someone's actively trying to break something.
-            throw new Error("You can't skip a step that isn't optional.");
-        }
+    // const handleSkip = () => {
+    //     if (!isStepOptional(activeStep)) {
+    //         // You probably want to guard against something like this,
+    //         // it should never occur unless someone's actively trying to break something.
+    //         throw new Error("You can't skip a step that isn't optional.");
+    //     }
 
-        setActiveStep(prevActiveStep => prevActiveStep + 1);
-        setSkipped(prevSkipped => {
-            const newSkipped = new Set(prevSkipped.values());
-            newSkipped.add(activeStep);
-            return newSkipped;
-        });
-    };
+    //     setActiveStep(prevActiveStep => prevActiveStep + 1);
+    //     setSkipped(prevSkipped => {
+    //         const newSkipped = new Set(prevSkipped.values());
+    //         newSkipped.add(activeStep);
+    //         return newSkipped;
+    //     });
+    // };
 
     const handleReset = () => {
         setActiveStep(0);
@@ -114,16 +114,16 @@ export default function HorizontalLinearStepper() {
                                     <Button disabled={activeStep === 0} onClick={handleBack} className={classes.button}>
                                         Back
                                     </Button>
-                                    {isStepOptional(activeStep) && (
-                                        <Button
-                                            variant="contained"
-                                            color="primary"
-                                            onClick={handleSkip}
-                                            className={classes.button}
-                                        >
-                                            Skip
-                                        </Button>
-                                    )}
+                                    {/* {isStepOptional(activeStep) && (
+                                        // <Button
+                                        //     variant="contained"
+                                        //     color="primary"
+                                        //     onClick={handleSkip}
+                                        //     className={classes.button}
+                                        // >
+                                        //     Skip
+                                        // </Button>
+                                    )} */}
 
                                     <Button
                                         variant="contained"
